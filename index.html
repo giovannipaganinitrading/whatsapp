@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Falar com Giovanni</title>
+  <style>
+    body{margin:0;height:100vh;display:flex;align-items:center;justify-content:center;font-family:system-ui,Arial,sans-serif;background:#0b141a;color:#e9edef}
+    .box{text-align:center;padding:24px}
+    a.btn{display:inline-block;margin-top:16px;background:#25D366;color:#0b141a;text-decoration:none;font-weight:700;padding:14px 28px;border-radius:999px;font-size:17px}
+    p{opacity:.8;font-size:15px}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <p>Abrindo o WhatsApp...</p>
+    <a class="btn" id="wa" href="#">Falar no WhatsApp</a>
+  </div>
+  <script>
+    var nums = ["553182167280", "553183014869", "553182933013"];
+    var n = nums[Math.floor(Math.random() * nums.length)];
+    var url = "https://api.whatsapp.com/send?phone=" + n + "&text=Venho%20do%20YouTube%20e%20gostaria%20de%20falar%20com%20Giovanni.";
+    document.getElementById("wa").href = url;
+    location.href = url;
+  </script>
+</body>
+</html>
