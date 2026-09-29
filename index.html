@@ -8,7 +8,10 @@
   <script>
     var nums = ["5531987935812", "5531931571207"];
     var n = nums[Math.floor(Math.random() * nums.length)];
-    location.href = "https://api.whatsapp.com/send?phone=" + n + "&text=Apostila";
+
+    var mensagem = "Oi! Quero enviar minha dúvida para ser respondida na próxima aula:\n\n";
+
+    location.href = "https://api.whatsapp.com/send?phone=" + n + "&text=" + encodeURIComponent(mensagem);
   </script>
 </body>
 </html>
