@@ -6,10 +6,10 @@
 </head>
 <body>
   <script>
-    var nums = ["5531987935812", "553131571207"];
+    var nums = ["553186240818", "553131571207"];
     var n = nums[Math.floor(Math.random() * nums.length)];
 
-    var mensagem = "Oi! Quero enviar minha dúvida para ser respondida na próxima aula:\n\n";
+    var mensagem = "Olá, minha dúvida é:\n\n";
 
     location.href = "https://api.whatsapp.com/send?phone=" + n + "&text=" + encodeURIComponent(mensagem);
   </script>
